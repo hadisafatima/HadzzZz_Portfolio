@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Unica+One&family=Yeseva+One&display=swap");
+@keyframes sizeReducerFromSM {
+  0% {
+    font-size: 30rem;
+  }
+  100% {
+    font-size: 10rem;
+    color: black;
+  }
+}
+@keyframes sizeReducer {
+  0% {
+    font-size: 30rem;
+  }
+  100% {
+    font-size: 8rem;
+  }
+}
+@keyframes zRightFromSM {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 11.5rem;
+  }
+}
+@keyframes initials {
+  0% {
+    top: 30%;
+    left: 0;
+  }
+  100% {
+    top: -6%;
+    left: -33%;
+  }
+}
+@keyframes initialsFromSM {
+  0% {
+    top: 30%;
+    left: 0;
+  }
+  100% {
+    top: -4%;
+    left: -44vw;
+  }
+}
+@keyframes loadingPages {
+  0% {
+    color: white;
+    opacity: 0.3;
+    transform: rotate(0deg);
+  }
+  100% {
+    color: white;
+    opacity: 0.8;
+    transform: rotate(360deg);
+  }
+}
+#loader section {
+  animation: loadingPages 3s ease-in-out infinite reverse;
+}
+
+#logoBgShape {
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+#logo #initial.initialPlacementFromSM {
+  animation: initialsFromSM 1s ease-in-out forwards;
+}
+#logo #initial.initialPlacement {
+  animation: initials 1s ease-in-out forwards;
+}
+#logo #initial section #H.logoRise {
+  animation: riseAndPing 1s ease-in-out forwards, sizeReducerFromSM 1s ease-in-out 1s forwards;
+}
+#logo #adzzZz.zShift {
+  animation: zRightFromSM 0.5s ease-in forwards;
+}
+
+.yeseva-one-regular {
+  font-family: "Yeseva One", serif;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+}
+
+@keyframes contentOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes keepMoving {
+  0%, 100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(5px, 5px, 5px);
+  }
+}
+#homeScreenParent.contentVisibility {
+  animation: contentOpacity 1s ease-in forwards;
+}
+#homeScreenParent #homeScreenContent section #name p {
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+#homeScreenParent #homeScreenContent section #name p.moveEffect {
+  animation: keepMoving 1.5s ease-in-out infinite;
+}
+#homeScreenParent #homeScreenContent section #myFields p.moveEffect {
+  animation: keepMoving 1.5s ease-in-out infinite;
+}
+#homeScreenParent #homeScreenContent section #missionStatement section p {
+  animation: keepMoving 3s ease-in-out infinite;
+}
+
+#menu #menuTag {
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes changeheadingBfSM {
+  from {
+    padding: 18rem 0;
+  }
+  to {
+    padding: 2rem 0.5rem 1rem 0;
+  }
+}
+@keyframes changeheading {
+  from {
+    font-size: 6rem;
+    padding: 18rem 0;
+  }
+  to {
+    font-size: 4rem;
+    padding: 2rem 0.5rem 1rem 0;
+  }
+}
+#about #aboutHeadingParent #aboutHeading.headingChange {
+  animation: changeheading 1s ease-in-out forwards;
+}
+#about #aboutHeadingParent #aboutHeading.headingChangeBfSM {
+  animation: changeheadingBfSM 1s ease-in-out forwards;
+}
+#about #aboutContent p {
+  animation: keepMoving 2s ease-in-out infinite;
+}
+
+:hover.opacityChange svg {
+  opacity: 1;
+}
+:hover.opacityChange img {
+  opacity: 1;
+}
+
+@keyframes videosWidth {
+  from {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+  }
+  to {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}
+@keyframes blinkEffect {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#projects.blink {
+  animation: blinkEffect 1s ease-in-out forwards;
+}
+#projects p.headingChange {
+  animation: changeheading 1s ease-in-out forwards;
+}
+#projects p.headingChangeBfSM {
+  animation: changeheadingBfSM 1s ease-in-out forwards;
+}
+#projects #videos .videosWidthChange {
+  animation: videosWidth 1s ease-in-out forwards;
+}
+
+#contact section section #form #labels {
+  animation: keepMoving 1.5s ease-in-out infinite;
+}/*# sourceMappingURL=main.css.map */

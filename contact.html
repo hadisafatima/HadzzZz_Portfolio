@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="./assets/Hadisa.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    <link rel="stylesheet" href="src/main.scss">
+    <title>Portfolio - UI dev & Data Analysis | Contact</title>
+</head>
+
+<body>
+
+    <!-- navbar/menu -->
+    <section id="menu"
+        class="list-none fixed inline w-[9rem] z-20 space-y-1 text-gray-900 bottom-[5rem] text-center right-[1rem] sm:right-12 leading-8 font-medium text-md">
+        <!-- menu -->
+        <section id="menuList" class="bg-[#BFB1C1] hidden rounded-t-full px-5 pb-2 pt-1 font-bold">
+            <li class="hover:cursor-pointer hover:text-pink-600"><a href="./home.html">Home</a></li>
+            <li class="hover:cursor-pointer hover:text-pink-600"><a href="./aboutHadzz.html">About
+                    Me</a></li>
+            <li class="hover:cursor-pointer hover:text-pink-600"><a href="./projects.html">Projects</a></li>
+            <li class="hover:cursor-pointer hover:text-pink-600"><a href="./whatIKnow.html">Skills</a></li>
+            <li class="hover:cursor-pointer border-b-2 text-pink-600"><a href="./contact.html">Contact</a></li>
+        </section>
+
+        <!-- menu icon -->
+        <section id="menuTag"
+            class="font-bold text-2xl sm:text-[1rem] bg-pink-400 p-4 sm:p-1 fixed right-6 sm:right-12 bottom-9 hover:bg-pink-500 sm:hover:h-9 w-fit sm:w-[9.5rem] hover:margin-t-1 rounded-full text-center">
+            <section class="hover:text-pink-200 justify-around items-center cursor-pointer flex">
+                <span class="hidden sm:inline">Menu</span>
+                <i class="fa-solid fa-bars size-5 mt-0 sm:mt-1"></i>
+            </section>
+        </section>
+
+    </section>
+
+    <section id="contact" class="flex flex-col justify-center lg:justify-normal w-full bg-[#dbedf7]">
+
+        <section class="my-4 mx-4 sm:mx-8 rounded-lg  border-gray-600/70">
+
+            <section
+                class="flex flex-row justify-end items-center px-8 rounded-t-lg text-2xl md:text-4xl h-48 bungee-regular text-black/70 [clip-path:polygon(0%_0%,250%_0%,100%_100%,0%_50%)] bg-[#d2c9f4]">
+                <p>Let's Connect<i class="fa-solid fa-handshake-angle ml-1"></i></p>
+            </section>
+
+            <section id="graphicAndForm" class="flex py-[30rem] flex-col w-full justify-center items-center">
+
+                <img src="./assets/contactFormGraphic.png" alt="" class="flex w-[60%] lg:w-[40%]">
+
+                <section id="form"
+                    class="flex flex-row items-center w-[90%] md:w-[70%] h-fit rounded-4xl bg-[#dbedf7]/50 px-4 py-2 my-8">
+
+                    <form id="labels" action="https://api.web3forms.com/submit" method="POST"
+                        class="flex flex-col py-2 md:py-4 lg:py-2 space-y-8 my-4 w-full">
+
+                        <input type="hidden" name="access_key" value="0de28320-dd89-4f36-8b3a-e9117c9dc366">
+                        <input type="text" name="fullname" id="name" placeholder="Full Name"
+                            class="w-full focus:outline-0 text-black/50 font-bold border-0 border-b-4 border-[#343A40] bg-[#d2c9f4]/90 rounded-xl text-lg h-12 py-1 indent-4"
+                            required />
+
+                        <input type="email" name="email" id="email" placeholder="Your Email"
+                            class="w-full focus:outline-0 text-black/50 font-bold border-0 border-b-4 border-[#343A40] bg-[#d2c9f4]/90 rounded-xl text-lg h-12 py-1 indent-4"
+                            required />
+
+                        <input type="hidden" name="subject" id="hiddenSubject" value="">
+                        <input type="text" name="subject" id="subject" placeholder="Your Subject"
+                            class="w-full text-black/50 font-bold focus:outline-0 border-0 border-b-4 border-[#343A40] bg-[#d2c9f4]/90 rounded-xl text-lg py-1 indent-4"
+                            required />
+
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message"
+                            class="w-full text-black/50 font-bold focus:outline-0 border-0 border-b-4 border-[#343A40] bg-[#d2c9f4]/90 rounded-xl text-lg py-1 px-4"
+                            required></textarea>
+
+
+                        <div class="h-captcha" data-captcha="true"></div>
+
+                        <section id="send_Btn" class="flex flex-row w-full justify-end">
+                            <button type="submit"
+                                class="bg-[#d2c9f4] border-2 hover:border-b-4 border-[#343A40] text-black lg:text-black/50 lg:hover:text-black lg:w-[40%] text-[1rem] lg:text-xl hover:cursor-pointer hover:py-3 font-bold py-1 px-3 md:py-2 md:px-4 rounded-full">Send
+                                Message</button>
+                        </section>
+
+                    </form>
+                </section>
+
+                <section id="CVAndHandles"
+                    class="flex flex-col py-8 space-y-2 w-[90%] md:w-[70%] lg:space-y-6 justify-around">
+
+                    <p class="text-2xl lg:text-4xl mb-6 font-bold text-gray-900">Get in Touch</p>
+
+                    <section id="callToAction"
+                        class="flex flex-row flex-wrap space-x-4 w-full space-y-2 sm:space-y-6">
+
+                        <div id="downloadCV"
+                            class="bg-purple-200 flex flex-row justify-center hover:bg-pink-200 hover:scale-x-105 hover:py-3 rounded-full relative py-2 px-4 lg:px-8 text-[1rem] sm:text-xl lg:text-2xl hover:cursor-pointer font-semibold font-mono">
+                            <a href="assets/Hadisa Syed's Resume.pdf" download="Hadisa_Fatima_Syed_Resume.pdf"
+                                class="hover:cursor-pointer">
+                                <button id="cv" class="hover:cursor-pointer hover:underline"><i
+                                        class="fa-solid fa-download mr-0 md:mr-2"></i><span
+                                        class="hidden lg:inline">Download</span> Resume</button>
+                            </a>
+                        </div>
+
+                        <section id="socialHandles"
+                            class="flex flex-row flex-wrap space-x-4 space-y-2 sm:space-y-6 text-[1rem] lg:h-auto sm:text-2xl font-semibold font-mono">
+
+                            <div id="linkedIn"
+                                class="handle flex hover:-translate-y-3 duration-75 flex-row items-center px-4 pt-1 rounded-full bg-blue-400 text-black">
+                                <span class="handle-icon"><a
+                                        href="https://www.linkedin.com/in/hadisa-fatima-syed-85537a266/"
+                                        target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                </span>
+                            </div>
+
+                            <div id="gitHub"
+                                class="handle flex hover:-translate-y-3 duration-75 flex-row items-center px-4 pt-1 rounded-full bg-gray-900 text-white">
+                                <span class="handle-icon"><a href="https://github.com/hadisafatima" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a>
+                                </span>
+                            </div>
+
+                            <div id="mail"
+                                class="handle flex hover:-translate-y-3 duration-75 flex-row items-center px-4 pt-1 rounded-full bg-red-400 text-black">
+                                <span class="handle-icon"><a href="mailto:hadisaasyed@gmail.com" target="_blank"><i
+                                            class="fa-regular fa-envelope"></i></a>
+                                </span>
+                            </div>
+
+                            <div id="whatsapp"
+                                class="handle flex hover:-translate-y-3 duration-75 flex-row items-center py-2 h-fit px-4 rounded-full bg-green-400 text-black">
+                                <span class="handle-icon"><a
+                                        href="https://wa.me/923002067562?text=Hi%20there!%20I'm%20interested%20in%20your%20work"
+                                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                                </span>
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+
+            <section
+                class="flex flex-row items-center justify-between text-[0.6rem] sm:text-[1rem] px-8 py-2 rounded-b-lg text-black bg-[#d2c9f4]">
+                <p>© Copyright. All Rights Reserved.</p>
+                <p>Made with <i class="fa-solid fa-heart text-[#D4F8E8]"></i> by <span
+                        class="text-sm sm:text-lg pl-1 text-[#D4F8E8] bungee-regular">Hadisa</span>
+                </p>
+            </section>
+
+        </section>
+
+    </section>
+
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    
+    <script type="module" src="contact.js"></script>
+    <script src="menu.js"></script>
+    
+    <script src="https://kit.fontawesome.com/334ac14b63.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
